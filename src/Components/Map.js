@@ -20,7 +20,9 @@ export default class Map extends React.Component {
   constructor() {
     super();
     this.state = {
+      myLocation: {},
       markers: [[-12.04318, -77.02824]]
+
     };
   }
 
@@ -31,6 +33,19 @@ export default class Map extends React.Component {
   }
 
   componentDidMount() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(position => {
+        this.setState({
+          myLocation: {
+            latitude: position.coords.latitude,
+            longitude: position.coords.longitude
+          }
+        });
+      });
+    } else {
+      alert('No se puede hacer la geolocalización en este buscador.');
+    }
+
     this.map = L.map('map', {
       center: [-12.046374, -77.042793],
       zoom: 10,
@@ -53,6 +68,23 @@ export default class Map extends React.Component {
       );
       marker.bindPopup('Alerta de Robo').openPopup();
     });
+  }
+
+  componentDidUpdate() {
+    const myLocation = L.icon({
+      iconUrl:
+        'http://photos1.blogger.com/blogger/4638/615/200/punto%20azul.png',
+
+      iconSize: [25, 25],
+      iconAnchor: [4, 62],
+      popupAnchor: [-3, -76]
+    });
+
+    const marker = L.marker(
+      [this.state.myLocation.latitude, this.state.myLocation.longitude],
+      { icon: myLocation }
+    ).addTo(this.map);
+    marker.bindPopup('<b>Estás aquí</b>').openPopup();
   }
 
   render() {
