@@ -1,8 +1,26 @@
 import React from 'react';
 import styled from 'styled-components';
+import axios from 'axios';
 
-const ChooseDistric = ({district})=> {
-    
+class ChooseDistric extends React.Component  {
+    constructor(){
+        super();
+        this.state = {
+          district:[]
+        }
+      }
+
+      componentDidMount() {
+        axios.get(` https://raw.githubusercontent.com/JanetGM/hackatrix/vista2-navbar/src/components/Database/district.json
+        `)
+          .then(res => {
+            const district = res.data;
+            this.setState({ district });
+          })
+      }
+
+   
+    render() {
     const Wrapper = styled.section`
     padding: 1em;
     background: papayawhip;
@@ -42,7 +60,7 @@ const ChooseDistric = ({district})=> {
     font-size:10px;
     margin-top:30px;
     `;
-    
+    const {district} = this.state;
         return(
         <> 
        
@@ -66,6 +84,7 @@ const ChooseDistric = ({district})=> {
         
         )
     }
+}
 
     
 
