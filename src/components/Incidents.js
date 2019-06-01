@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
+import ModalTemplate from '../modal';
 
 const IncidentsWrapper = styled.section`
   display: grid;
@@ -31,6 +32,7 @@ const IncidentText = styled.span`
 
 const Incidents = () => {
   return (
+    <>
     <IncidentsWrapper>
       <div>
         <IconsWrapper
@@ -65,6 +67,8 @@ const Incidents = () => {
         <IncidentText>Obras</IncidentText>
       </div>
     </IncidentsWrapper>
+    <ModalTemplate />
+    </>
   )
 
 };
