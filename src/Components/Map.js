@@ -8,13 +8,28 @@ const Wrapper = styled.div`
   height: ${props => props.height};
 `;
 
+const myIcon = L.icon({
+  iconUrl:
+    'https://cdn1.iconfinder.com/data/icons/pixel-perfect-at-16px-volume-2/16/2105-512.png',
+  iconSize: [30, 30],
+  iconAnchor: [30, 30],
+  popupAnchor: [0, -50]
+});
+
 export default class Map extends React.Component {
   constructor() {
     super();
     this.state = {
-      markers: [[-12, -77]],
-      myLocation: {}
+      myLocation: {},
+      markers: [[-12.04318, -77.02824]]
+
     };
+  }
+
+  centerLeafletMapOnMarker(map, marker) {
+    const latLngs = [marker.getLatLng()];
+    const markerBounds = L.latLngBounds(latLngs);
+    this.map.fitBounds(markerBounds);
   }
 
   componentDidMount() {
@@ -32,9 +47,9 @@ export default class Map extends React.Component {
     }
 
     this.map = L.map('map', {
-      center: [-12.1355039, -77.03],
+      center: [-12.046374, -77.042793],
       zoom: 10,
-      zoomControl: true
+      zoomControl: false
     });
 
     L.tileLayer(
@@ -46,6 +61,13 @@ export default class Map extends React.Component {
         maxNativeZoom: 17
       }
     ).addTo(this.map);
+
+    this.map.on('click', function(e) {
+      const marker = L.marker(Object.values(e.latlng), { icon: myIcon }).addTo(
+        this.map
+      );
+      marker.bindPopup('Alerta de Robo').openPopup();
+    });
   }
 
   componentDidUpdate() {
