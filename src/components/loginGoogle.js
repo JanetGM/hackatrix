@@ -10,7 +10,6 @@ class LoginGoogle extends Component  {
    this.state = {
      users: {
        nombre: '',
-       email: '',
        photoUrl: '',
        distrito: '',
        reporte:[{
@@ -23,30 +22,24 @@ class LoginGoogle extends Component  {
        }]
      }
    }
+this.signIn = this.signIn.bind(this)
  }
-
-currentUser() {
-  const userData = firebaseAuth().currentUser;
-  console.log(userData)
-//   if(userData ==! null){
-
-//    console.log('entro')
-//   }else{
-// console.log('no hay usuario');
-//   }
-
- 
-
-} 
 
  signIn(){
   const provider = new firebaseAuth.GoogleAuthProvider();
   firebaseAuth().signInWithPopup(provider)
   .then((result) => {
-    this.currentUser()
-
+  console.log(result)
   }).catch((error) => { 
   });
+  const user = firebaseAuth().currentUser;
+  const name = user.displayName;
+  const photoUser = user.photoURL;
+  this.setState({ user: {
+    nombre: name,
+    photoUrl: photoUser,
+  }
+  })
 }
 
     render() {
@@ -65,6 +58,7 @@ currentUser() {
             <LoginButton type="button" className="btn App-button" onClick={this.signIn}>
               <i className="fab fa-google-plus-g"></i> Iniciar sesión con google</LoginButton>
           </div>
+          <p>{console.log(this.state.users)}</p>
           </>
         );      
     }
