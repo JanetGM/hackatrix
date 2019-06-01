@@ -53,7 +53,7 @@ const ChooseDistric = ({district})=> {
                 </Wrapper>
                 <Select>
                   {
-                      district.map(e=><option>{e.name}</option>)            
+                      district.map((e,i)=><option key={i}>{e.name}</option>)            
                          }
                 </Select>
                 <FatherComponent>
