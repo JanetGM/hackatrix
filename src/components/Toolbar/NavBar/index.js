@@ -8,6 +8,7 @@ const navBar = () => (
     <NavItem link="/" exact>Home</NavItem>
     <NavItem link="/ChooseDistrict">Distrito</NavItem>
     <NavItem link="/Incidents">Incidentes</NavItem>
+    <NavItem link="/Map">Mapa</NavItem>
   </ul>
 );
 

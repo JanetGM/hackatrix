@@ -1,11 +1,12 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Layout from './components/Layout';
+
 import ChooseDistric from './components/ChooseDistric';
 import Incidents from './components/Incidents';
 import Home from './components/Home';
+import Map from './components/Map';
 
-class app extends React.Component{
+class App extends React.Component{
 
    render(){
     return(
@@ -15,10 +16,11 @@ class app extends React.Component{
         <Route path="/" exact component={Home}/>
         <Route path="/ChooseDistrict" component={ChooseDistric} />
         <Route path="/Incidents" component={Incidents} />
+        <Route path="/Map" component={Map}/>
        </Switch>
     
       </>
     )
   } 
 }
-export default app;
+export default App;
