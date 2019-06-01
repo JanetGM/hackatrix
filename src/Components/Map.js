@@ -47,10 +47,12 @@ export default class Map extends React.Component {
       }
     ).addTo(this.map);
 
-    const marker = L.marker([-12.141667, -77.016667], { icon: myIcon }).addTo(
-      this.map
-    );
-    marker.bindPopup('Alerta de Robo').openPopup();
+    this.map.on('click', function(e) {
+      const marker = L.marker(Object.values(e.latlng), { icon: myIcon }).addTo(
+        this.map
+      );
+      marker.bindPopup('Alerta de Robo').openPopup();
+    });
   }
 
   render() {
