@@ -1,6 +1,7 @@
 import React from 'react';
 import { storage } from './firebase';
 import styled from 'styled-components';
+import Push from 'push.js';
 
 const Camera = styled.img`
   width: 20%;
@@ -36,6 +37,17 @@ class ModalTemplate extends React.Component {
           })
       });
     }
+    notificationfuncion(){
+        
+      Push.create("BARRANCO", {
+          body: "Accidente de transito",
+          timeout: 4000,
+          onClick: function () {
+              window.focus();
+              this.close();
+          }
+      });
+  }
     render () {
       return ( 
         <>
@@ -62,7 +74,7 @@ class ModalTemplate extends React.Component {
                 </div>
                 <div className="modal-footer">
                     <button type="button" className="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                    <button type="button" className="btn btn-primary">Registrar</button>
+                    <button type="button" className="btn btn-primary" onClick={this.notificationfuncion}>Registrar</button>
                 </div>
                 </div>
             </div>
