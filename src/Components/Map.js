@@ -28,7 +28,7 @@ export default class Map extends React.Component {
         });
       });
     } else {
-      alert('Geolocation API is not supported in your browser. :(');
+      alert('No se puede hacer la geolocalización en este buscador.');
     }
 
     this.map = L.map('map', {
