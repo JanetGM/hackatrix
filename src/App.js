@@ -1,15 +1,21 @@
 import React from 'react';
-import './App.css';
+import { Switch, Route } from 'react-router-dom';
 
-function App() {
-  return (
-    <>
-      <div className="App">
-        
-      </div>
-    </>
- 
-  );
-}
+import Layout from './components/Layout';
+import ChooseDistric from './components/ChooseDistric';
+import menu from './components/menu';
+import Home from './components/Home';
 
-export default App;
+
+
+
+const app = () => (
+  <Layout>
+    <Switch>
+      <Route path="/" exact component={Home}/>
+      <Route path="/ChooseDistrict" component={ChooseDistric} />
+    </Switch>
+  </Layout>
+);
+
+export default app;
