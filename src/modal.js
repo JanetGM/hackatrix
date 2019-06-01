@@ -2,7 +2,6 @@ import React from 'react';
 import { storage } from './firebase';
 import styled from 'styled-components';
 
-
 const Camera = styled.img`
   width: 20%;
 `
@@ -37,7 +36,6 @@ class ModalTemplate extends React.Component {
           })
       });
     }
-
     render () {
       return ( 
         <>
