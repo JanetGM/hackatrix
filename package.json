@@ -13,6 +13,7 @@
     "react-dom": "^16.8.6",
     "react-leaflet": "^2.3.0",
     "react-modal": "^3.8.1",
+    "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.1",
     "serve": "^11.0.1",
     "styled-components": "^4.2.1"
