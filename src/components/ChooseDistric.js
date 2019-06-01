@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const ChooseDistric = ({user})=> {
+const ChooseDistric = ({district})=> {
     
     const Wrapper = styled.section`
     padding: 1em;
@@ -52,9 +52,9 @@ const ChooseDistric = ({user})=> {
                 </Title>
                 </Wrapper>
                 <Select>
-                  {/* {
-                      user.map((e,i)=>(<option key={i}>{e.name}</option>))            
-                         } */}
+                  {
+                      district.map(e=><option>{e.name}</option>)            
+                         }
                 </Select>
                 <FatherComponent>
                     <AddDistric> 
