@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
 import styles from './Layout.module.css';
 import Toolbar from '../Toolbar';
 import SideDrawer from '../Toolbar/SideDrawer';
@@ -32,6 +31,3 @@ const Layout = ({ children }) => {
 
 export default Layout;
 
-Layout.propTypes = {
-  children: PropTypes.element.isRequired,
-};

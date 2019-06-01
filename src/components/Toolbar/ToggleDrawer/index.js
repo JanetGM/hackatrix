@@ -1,6 +1,4 @@
 import React from 'react';
-
-import PropTypes from 'prop-types';
 import styles from './ToggleDrawer.module.css';
 
 const toggleDrawer = ({ clicked }) => (
@@ -13,6 +11,3 @@ const toggleDrawer = ({ clicked }) => (
 
 export default toggleDrawer;
 
-toggleDrawer.propTypes = {
-  clicked: PropTypes.func.isRequired,
-};

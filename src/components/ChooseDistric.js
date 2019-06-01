@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import axios from 'axios';
+import Layout from './Layout/index';
 
 class ChooseDistric extends React.Component  {
     constructor(){
@@ -63,7 +64,7 @@ class ChooseDistric extends React.Component  {
     const {district} = this.state;
         return(
         <> 
-       
+        <Layout/>
                 <Wrapper>
                 <Title>
                     Notificaciones sobre mi distrito
@@ -80,6 +81,7 @@ class ChooseDistric extends React.Component  {
                     <TitleBottom>Agregar otro distrito</TitleBottom>
                     </AddDistric>
                 </FatherComponent>
+                
         </>
         
         )

@@ -5,7 +5,7 @@ import styles from './Toolbar.module.css';
 
 import ToggleDrawer from './ToggleDrawer';
 
-const toolbar = ({ toggleDrawerClicked }) => (
+const Toolbar = ({ toggleDrawerClicked }) => (
   <header className={styles.Toolbar}>
   
     <ToggleDrawer clicked={toggleDrawerClicked} />
@@ -15,8 +15,6 @@ const toolbar = ({ toggleDrawerClicked }) => (
   </header>
 );
 
-export default toolbar;
+export default Toolbar;
 
-toolbar.propTypes = {
-  toggleDrawerClicked: PropTypes.func.isRequired,
-};
+
