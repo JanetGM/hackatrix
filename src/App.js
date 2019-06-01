@@ -1,5 +1,6 @@
 import React from 'react';
-import  LoginGoogle  from './components/loginGoogle';
+import LoginGoogle  from './components/loginGoogle';
+import LoginFacebook from './components/loginFacebook';
 import styled from 'styled-components';
 
 
@@ -13,6 +14,7 @@ import styled from 'styled-components';
     return (
       <AppContainer>
         <LoginGoogle />
+        <LoginFacebook />
       </AppContainer>
     );
 }
