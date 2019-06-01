@@ -1,6 +1,9 @@
 {
   "name": "hackatrix",
   "version": "0.1.0",
+  "engines": {
+    "node": "10.x"
+  },
   "private": true,
   "dependencies": {
     "axios": "^0.19.0",
@@ -57,4 +60,5 @@
       "last 1 safari version"
     ]
   }
+  
 }
