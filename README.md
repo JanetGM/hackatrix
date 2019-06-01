@@ -1,4 +1,4 @@
-### Equipo : Eva's
+### Equipo : Laboratorians Hackers
 
 ### N° Equipo : 9
 
