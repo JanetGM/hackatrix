@@ -7,7 +7,7 @@ import ChooseDistric from './components/ChooseDistric';
 import Incidents from './components/Incidents';
 import Home from './components/Home';
 
-class app extends React.Component{
+class App extends React.Component{
 
    render(){
     return(
@@ -23,4 +23,4 @@ class app extends React.Component{
     )
   } 
 }
-export default app;
+export default App;

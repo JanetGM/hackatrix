@@ -1,9 +1,10 @@
 import React from 'react';
+import Map from './Map';
 
 const Home = () => {
  return(
      <>
-     <p>Hola Home</p>
+     <Map/>
      </>
  )
 }

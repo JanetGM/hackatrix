@@ -61,12 +61,15 @@ export default class Map extends React.Component {
         maxNativeZoom: 17
       }
     ).addTo(this.map);
+    
+    const marker = L.marker([-8.141791433688246, -79.03257928890527], { icon: myIcon }).addTo(
+      this.map
+    );
+    marker.bindPopup('Alerta de Robo').openPopup();
 
     this.map.on('click', function(e) {
-      const marker = L.marker(Object.values(e.latlng), { icon: myIcon }).addTo(
-        this.map
-      );
-      marker.bindPopup('Alerta de Robo').openPopup();
+      console.log(Object.values(e.latlng))
+     
     });
   }
 
