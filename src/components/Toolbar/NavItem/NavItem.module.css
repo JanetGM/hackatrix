@@ -1,0 +1,52 @@
+.NavItem {
+    margin: 0.3em;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+}
+
+.NavItem a {
+    color: #8a8892;
+    opacity: 0.5;
+    text-decoration: none;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    font-weight: bold;
+    float: right;
+    border-radius: 2px;
+}
+
+.NavItem a:hover,
+.NavItem a:active,
+.NavItem a.active {
+    color: white;
+}
+
+/* @media (min-width: 500px) {
+    .NavItem {
+        margin: 0.2em;
+        display: flex;
+        height: 100%;
+        width: auto;
+        align-items: center;
+    }
+    
+    .NavItem a {
+        color: white;
+        height: 100%;
+        padding: 16px 10px;
+        font: inherit;
+        font-weight: bold;
+        background-color: #ef3340;
+        
+    }
+    
+    .NavItem a:hover,
+    .NavItem a:active,
+    .NavItem a.active {
+        background-color: #ef3340;
+        color: white;
+        border-bottom: 4px solid white;
+    }
+} */
