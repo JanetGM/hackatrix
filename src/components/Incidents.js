@@ -33,41 +33,37 @@ const Incidents = () => {
   return (
     <IncidentsWrapper>
       <div>
-        <IconsWrapper>
+        <IconsWrapper
+            data-toggle="modal" data-target="#exampleModalCenter"
+        >
           <Icons className="fas fa-car-crash"/>
         </IconsWrapper> 
-        <IncidentText>Choque</IncidentText>
+        <IncidentText>Tránsito</IncidentText>
       </div> 
       <div>
-        <IconsWrapper>
+        <IconsWrapper 
+             data-toggle="modal" data-target="#exampleModalCenter"
+        >
           <Icons className="fas fa-shield-alt"/>
         </IconsWrapper>
         <IncidentText>Seguridad</IncidentText>
       </div>  
       <div>
-        <IconsWrapper>
+        <IconsWrapper
+             data-toggle="modal" data-target="#exampleModalCenter"
+        >
           <Icons className="fas fa-car-crash"/>
         </IconsWrapper> 
-        <IncidentText>Basura</IncidentText>
+        <IncidentText>Medio ambiente</IncidentText>
       </div> 
       <div>
-        <IconsWrapper>
+        <IconsWrapper
+             data-toggle="modal" data-target="#exampleModalCenter"
+        >
           <Icons className="fas fa-shield-alt"/>
         </IconsWrapper>
-        <IncidentText>Desorden</IncidentText>
+        <IncidentText>Obras</IncidentText>
       </div>
-      <div>
-        <IconsWrapper>
-          <Icons className="fas fa-car-crash"/>
-        </IconsWrapper> 
-        <IncidentText>Delito</IncidentText>
-      </div> 
-      <div>
-        <IconsWrapper>
-          <Icons className="fas fa-shield-alt"/>
-        </IconsWrapper>
-        <IncidentText>Seguridad</IncidentText>
-      </div> 
     </IncidentsWrapper>
   )
 
