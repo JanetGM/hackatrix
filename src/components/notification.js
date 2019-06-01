@@ -11,13 +11,17 @@ class Notification extends Component {
    super();
    this.state = {
    dataActual:[],
-   dataAnterior:[]
+  
+
     }
    }
 
     componentWillMount(){
        db.collection("user").onSnapshot((snap) => {
         const data = [];
+        const report =[];
+        const reportEspecific ='';
+
             snap.forEach((doc) => {
             
             data.push({
@@ -29,15 +33,16 @@ class Notification extends Component {
                 dataActual:data,
                 
             });
-                    });
+
+            });
  
     }
 
 
     notificationfuncion(){
-        Push.create("Hello Mali!", {
-            body: "Estas ahi beibi??",
-            icon: '/icon.png',
+        
+        Push.create("BARRANCO", {
+            body: "Accidente de transito",
             timeout: 4000,
             onClick: function () {
                 window.focus();
@@ -47,12 +52,17 @@ class Notification extends Component {
     }
 
 
+    notificationSpecificIncident(){
+        const arrayDeDatos = this.state.dataActual;
+       const datoEspecifico =  arrayDeDatos.filter(obj => console.log(obj.specific_incident));
+       console.log(datoEspecifico);
+    }
+
+
 
   render() {
-  
+     
 
-
-console.log(this.state.dataActual)
     const ButtonNotificacion= styled.button`
     background: transparent;
     border-radius: 3px;
@@ -71,11 +81,6 @@ console.log(this.state.dataActual)
         Notificacion
       </ButtonNotificacion>
 
-      <ButtonNotificacion 
-      className="Button">
-        ConsultarData
-      </ButtonNotificacion>
-      
     </div>
     );
   }
