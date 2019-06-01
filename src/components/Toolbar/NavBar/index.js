@@ -7,7 +7,7 @@ const navBar = () => (
   <ul className={styles.NavBar}>
     <NavItem link="/" exact>Home</NavItem>
     <NavItem link="/ChooseDistrict">Distrito</NavItem>
-  
+    <NavItem link="/Incidents">Incidentes</NavItem>
   </ul>
 );
 
