@@ -11,13 +11,12 @@ class Notification extends Component {
    super();
    this.state = {
    dataActual:[],
+   dataAnterior:[]
     }
    }
 
     componentWillMount(){
-       
-
-        const dataTotal = db.collection("user").onSnapshot((snap) => {
+       db.collection("user").onSnapshot((snap) => {
         const data = [];
             snap.forEach((doc) => {
             
@@ -28,13 +27,14 @@ class Notification extends Component {
             });
                 this.setState({
                 dataActual:data,
+                
             });
                     });
  
     }
 
 
-    notificionfuncion(){
+    notificationfuncion(){
         Push.create("Hello Mali!", {
             body: "Estas ahi beibi??",
             icon: '/icon.png',
@@ -46,9 +46,13 @@ class Notification extends Component {
         });
     }
 
-  render() {
-    console.log(this.state.dataActual)
 
+
+  render() {
+  
+
+
+console.log(this.state.dataActual)
     const ButtonNotificacion= styled.button`
     background: transparent;
     border-radius: 3px;
@@ -63,7 +67,7 @@ class Notification extends Component {
     <div>
       <ButtonNotificacion 
       className="Button"
-      onClick={this.notificionfuncion}>
+      onClick={this.notificationfuncion}>
         Notificacion
       </ButtonNotificacion>
 
