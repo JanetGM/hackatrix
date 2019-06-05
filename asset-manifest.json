@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Reto-Rimac/static/css/main.6e1fdd3a.chunk.css",
-    "main.js": "/Reto-Rimac/static/js/main.d4cda632.chunk.js",
-    "main.js.map": "/Reto-Rimac/static/js/main.d4cda632.chunk.js.map",
-    "runtime~main.js": "/Reto-Rimac/static/js/runtime~main.4e6a8d30.js",
-    "runtime~main.js.map": "/Reto-Rimac/static/js/runtime~main.4e6a8d30.js.map",
-    "static/css/2.098bc035.chunk.css": "/Reto-Rimac/static/css/2.098bc035.chunk.css",
-    "static/js/2.10d23ec6.chunk.js": "/Reto-Rimac/static/js/2.10d23ec6.chunk.js",
-    "static/js/2.10d23ec6.chunk.js.map": "/Reto-Rimac/static/js/2.10d23ec6.chunk.js.map",
-    "index.html": "/Reto-Rimac/index.html",
-    "precache-manifest.e5e1f6e46246ef37d02c9537b97b0fb6.js": "/Reto-Rimac/precache-manifest.e5e1f6e46246ef37d02c9537b97b0fb6.js",
-    "service-worker.js": "/Reto-Rimac/service-worker.js",
-    "static/css/2.098bc035.chunk.css.map": "/Reto-Rimac/static/css/2.098bc035.chunk.css.map",
-    "static/css/main.6e1fdd3a.chunk.css.map": "/Reto-Rimac/static/css/main.6e1fdd3a.chunk.css.map"
+    "main.css": "/hackatrix/static/css/main.6e1fdd3a.chunk.css",
+    "main.js": "/hackatrix/static/js/main.5ada11b9.chunk.js",
+    "main.js.map": "/hackatrix/static/js/main.5ada11b9.chunk.js.map",
+    "runtime~main.js": "/hackatrix/static/js/runtime~main.950d7067.js",
+    "runtime~main.js.map": "/hackatrix/static/js/runtime~main.950d7067.js.map",
+    "static/css/2.098bc035.chunk.css": "/hackatrix/static/css/2.098bc035.chunk.css",
+    "static/js/2.4f4ba14b.chunk.js": "/hackatrix/static/js/2.4f4ba14b.chunk.js",
+    "static/js/2.4f4ba14b.chunk.js.map": "/hackatrix/static/js/2.4f4ba14b.chunk.js.map",
+    "index.html": "/hackatrix/index.html",
+    "precache-manifest.14dee477788e227d975e92b1ae4e140f.js": "/hackatrix/precache-manifest.14dee477788e227d975e92b1ae4e140f.js",
+    "service-worker.js": "/hackatrix/service-worker.js",
+    "static/css/2.098bc035.chunk.css.map": "/hackatrix/static/css/2.098bc035.chunk.css.map",
+    "static/css/main.6e1fdd3a.chunk.css.map": "/hackatrix/static/css/main.6e1fdd3a.chunk.css.map"
   }
 }
