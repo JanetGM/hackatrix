@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Reto-Rimac/static/css/main.6e1fdd3a.chunk.css",
+    "main.js": "/Reto-Rimac/static/js/main.d4cda632.chunk.js",
+    "main.js.map": "/Reto-Rimac/static/js/main.d4cda632.chunk.js.map",
+    "runtime~main.js": "/Reto-Rimac/static/js/runtime~main.4e6a8d30.js",
+    "runtime~main.js.map": "/Reto-Rimac/static/js/runtime~main.4e6a8d30.js.map",
+    "static/css/2.098bc035.chunk.css": "/Reto-Rimac/static/css/2.098bc035.chunk.css",
+    "static/js/2.10d23ec6.chunk.js": "/Reto-Rimac/static/js/2.10d23ec6.chunk.js",
+    "static/js/2.10d23ec6.chunk.js.map": "/Reto-Rimac/static/js/2.10d23ec6.chunk.js.map",
+    "index.html": "/Reto-Rimac/index.html",
+    "precache-manifest.e5e1f6e46246ef37d02c9537b97b0fb6.js": "/Reto-Rimac/precache-manifest.e5e1f6e46246ef37d02c9537b97b0fb6.js",
+    "service-worker.js": "/Reto-Rimac/service-worker.js",
+    "static/css/2.098bc035.chunk.css.map": "/Reto-Rimac/static/css/2.098bc035.chunk.css.map",
+    "static/css/main.6e1fdd3a.chunk.css.map": "/Reto-Rimac/static/css/main.6e1fdd3a.chunk.css.map"
+  }
+}
